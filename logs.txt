@@ -1,0 +1,180 @@
+PS D:\Devesh\db-tranfer> npm start
+
+> db-tranfer@1.0.0 start
+> node transfer.js
+
+
+╔══════════════════════════════════════════════════════════╗
+║               Roamigo MongoDB Data Transfer              ║
+╚══════════════════════════════════════════════════════════╝
+Batch Size: 500
+Mode:       SAFE UPSERT (Idempotent)
+Indexes:    Preserve Default
+Filter:     All Collections
+
+Loading models from ./models ...
+Loaded 18 model definitions.
+
+Planned Execution Sequence:
+   1. City             -> cities
+   2. User             -> users
+   3. Provider         -> providers
+   4. Property         -> properties
+   5. Room             -> rooms
+   6. Collection       -> collections
+   7. Experience       -> experiences
+   8. Booking          -> bookings
+   9. Payment          -> payments
+  10. Ledger           -> ledgers
+  11. Review           -> reviews
+  12. Wishlist         -> wishlists
+  13. Blog             -> blogs
+  14. Faq              -> faqs
+  15. Message          -> messages
+  16. Notification     -> notifications
+  17. PartnerEnquiry   -> partnerenquiries
+  18. Availability     -> availabilities     ★★★ (PROCESSED LAST)
+
+Connecting to Source Database...
+Source Database connected successfully.
+
+Found 1 additional collection(s) in source DB without a model file:
+ - roamigo: 0 document(s)
+
+Connecting to Target Database...
+Target Database connected successfully.
+
+=============================================================
+Model: [City] | Collection: [cities]
+Source count: 19 document(s)
+Progress: 19 / 19 (100.0%)
+Completed in 0.41s
+
+=============================================================
+Model: [User] | Collection: [users]
+Source count: 25 document(s)
+Progress: 25 / 25 (100.0%)
+Completed in 0.31s
+
+=============================================================
+Model: [Provider] | Collection: [providers]
+Source count: 10 document(s)
+Progress: 10 / 10 (100.0%)
+Completed in 0.21s
+
+=============================================================
+Model: [Property] | Collection: [properties]
+Source count: 30 document(s)
+Progress: 30 / 30 (100.0%)
+Completed in 0.69s
+
+=============================================================
+Model: [Room] | Collection: [rooms]
+Source count: 6 document(s)
+Progress: 6 / 6 (100.0%)
+Completed in 0.24s
+
+=============================================================
+Model: [Collection] | Collection: [collections]
+Source count: 6 document(s)
+Progress: 6 / 6 (100.0%)
+Completed in 0.21s
+
+=============================================================
+Model: [Experience] | Collection: [experiences]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Booking] | Collection: [bookings]
+Source count: 25 document(s)
+Progress: 25 / 25 (100.0%)
+Completed in 0.32s
+
+=============================================================
+Model: [Payment] | Collection: [payments]
+Source count: 3 document(s)
+Progress: 3 / 3 (100.0%)
+Completed in 0.24s
+
+=============================================================
+Model: [Ledger] | Collection: [ledgers]
+Source count: 4 document(s)
+Progress: 4 / 4 (100.0%)
+Completed in 0.23s
+
+=============================================================
+Model: [Review] | Collection: [reviews]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Wishlist] | Collection: [wishlists]
+Source count: 2 document(s)
+Progress: 2 / 2 (100.0%)
+Completed in 0.22s
+
+=============================================================
+Model: [Blog] | Collection: [blogs]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Faq] | Collection: [faqs]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Message] | Collection: [messages]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Notification] | Collection: [notifications]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [PartnerEnquiry] | Collection: [partnerenquiries]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [(Raw) roamigo] | Collection: [roamigo]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Availability] | Collection: [availabilities]
+Source count: 2,562 document(s)
+Progress: 2,562 / 2,562 (100.0%)
+Completed in 15.97s
+
+
+═════════════════════════════════════════════════════════════════════
+                      TRANSFER SUMMARY
+═════════════════════════════════════════════════════════════════════
+Model            Collection          Transferred     Time  Status    
+─────────────────────────────────────────────────────────────────────
+City             cities                  19 / 19    0.41s  ✓ DONE
+User             users                   25 / 25    0.31s  ✓ DONE
+Provider         providers               10 / 10    0.21s  ✓ DONE
+Property         properties              30 / 30    0.69s  ✓ DONE
+Room             rooms                     6 / 6    0.24s  ✓ DONE
+Collection       collections               6 / 6    0.21s  ✓ DONE
+Experience       experiences               0 / 0     0.0s  EMPTY
+Booking          bookings                25 / 25    0.32s  ✓ DONE
+Payment          payments                  3 / 3    0.24s  ✓ DONE
+Ledger           ledgers                   4 / 4    0.23s  ✓ DONE
+Review           reviews                   0 / 0     0.0s  EMPTY
+Wishlist         wishlists                 2 / 2    0.22s  ✓ DONE
+Blog             blogs                     0 / 0     0.0s  EMPTY
+Faq              faqs                      0 / 0     0.0s  EMPTY
+Message          messages                  0 / 0     0.0s  EMPTY
+Notification     notifications             0 / 0     0.0s  EMPTY
+PartnerEnquiry   partnerenquiries          0 / 0     0.0s  EMPTY
+(Raw) roamigo    roamigo                   0 / 0     0.0s  EMPTY
+Availability     availabilities     2,562 / 2,562   15.97s  ✓ DONE
+─────────────────────────────────────────────────────────────────────
+Total Transferred: 2,692 documents in 19.82s
+═════════════════════════════════════════════════════════════════════

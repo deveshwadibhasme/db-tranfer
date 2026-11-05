@@ -1,0 +1,274 @@
+node transfer.js 
+◇ injected env (3) from .env
+
+╔══════════════════════════════════════════════════════════╗
+║               MongoDB Document Transfer Tool             ║
+╚══════════════════════════════════════════════════════════╝
+Batch Size: 500
+Mode:       SAFE UPSERT (Idempotent)
+Indexes:    Preserve Default
+Filter:     All Collections
+
+Discovering and loading models from ./models (including nested folders) ...
+Loaded 32 model definitions.
+
+Discovered Models & Collections:
+   1. Address                  -> addresses                [models\user\address.model.js]
+   2. Admin                    -> admins                   [models\admin.model.js]
+   3. Appointment              -> appointments             [models\appoinment\appoinment.model.js]
+   4. AppointmentSlot          -> appointmentslots         [models\appoinment\appoinment.slot.model.js]
+   5. Article                  -> articles                 [models\master\article.model.js]
+   6. AuditLog                 -> auditlogs                [models\common\auditlog.model.js]
+   7. ChildCareProgress        -> childcareprogresses      [models\childcare\childcare.progress.model.js]
+   8. ChildCareSubscription    -> childcaresubscriptions   [models\childcare\childcare.sub.model.js]
+   9. DietPlan                 -> dietplans                [models\master\diet.model.js]
+  10. DoctorProfile            -> doctorprofiles           [models\user\doctor.model.js]
+  11. DoctorSchedule           -> doctorschedules          [models\appoinment\schedule.model.js]
+  12. EmergencyRequest         -> emergencyrequests        [models\common\emergencyreq.model.js]
+  13. ExercisePlan             -> exerciseplans            [models\master\exercise.model.js]
+  14. Hospital                 -> hospitals                [models\user\hospital.model.js]
+  15. LabBooking               -> labbookings              [models\lab\labbooking.model.js]
+  16. LabReport                -> labreports               [models\lab\labreport.model.js]
+  17. LabTest                  -> labtests                 [models\lab\labtest.model.js]
+  18. MedicineOrder            -> medicineorders           [models\pharmacy\medicine.model.js]
+  19. MotherCareProgress       -> mothercareprogresses     [models\mothercare\mothercare.progress.model.js]
+  20. MotherCareSubscription   -> mothercaresubscriptions  [models\mothercare\mothercare.sub.model.js]
+  21. Notification             -> notifications            [models\master\notification.model.js]
+  22. OTP                      -> otps                     [models\user\otp.model.js]
+  23. PathologyLab             -> pathologylabs            [models\user\pathology.model.js]
+  24. Payment                  -> payments                 [models\common\payment.model.js]
+  25. Pharmacy                 -> pharmacies               [models\user\pharmacy.model.js]
+  26. Prescription             -> prescriptions            [models\appoinment\prescription.model.js]
+  27. Review                   -> reviews                  [models\master\review.model.js]
+  28. Role                     -> roles                    [models\user\role.model.js]
+  29. SubscriptionPlan         -> subscriptionplans        [models\master\subscription.model.js]
+  30. Testimonial              -> testimonials             [models\master\testonominal.mode.js]
+  31. User                     -> users                    [models\user\user.model.js]
+  32. ZoomMeeting              -> zoommeetings             [models\appoinment\zoom.model.js]
+
+Connecting to Source Database...
+Source Database connected successfully.
+
+Connecting to Target Database...
+Target Database connected successfully.
+
+=============================================================
+Model: [Address] | Collection: [addresses]
+Source count: 22 document(s)
+Progress: 22 / 22 (100.0%)
+Completed in 0.33s
+
+=============================================================
+Model: [Admin] | Collection: [admins]
+Source count: 1 document(s)
+Progress: 1 / 1 (100.0%)
+Completed in 0.18s
+
+=============================================================
+Model: [Appointment] | Collection: [appointments]
+Source count: 57 document(s)
+Progress: 57 / 57 (100.0%)
+Completed in 0.32s
+
+=============================================================
+Model: [AppointmentSlot] | Collection: [appointmentslots]
+Source count: 58 document(s)
+Progress: 58 / 58 (100.0%)
+Completed in 0.99s
+
+=============================================================
+Model: [Article] | Collection: [articles]
+Source count: 3 document(s)
+Progress: 3 / 3 (100.0%)
+Completed in 10.56s
+
+=============================================================
+Model: [AuditLog] | Collection: [auditlogs]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [ChildCareProgress] | Collection: [childcareprogresses]
+Source count: 1 document(s)
+Progress: 1 / 1 (100.0%)
+Completed in 0.15s
+
+=============================================================
+Model: [ChildCareSubscription] | Collection: [childcaresubscriptions]
+Source count: 6 document(s)
+Progress: 6 / 6 (100.0%)
+Completed in 0.16s
+
+=============================================================
+Model: [DietPlan] | Collection: [dietplans]
+Source count: 2 document(s)
+Progress: 2 / 2 (100.0%)
+Completed in 8.51s
+
+=============================================================
+Model: [DoctorProfile] | Collection: [doctorprofiles]
+Source count: 12 document(s)
+Progress: 12 / 12 (100.0%)
+Completed in 0.20s
+
+=============================================================
+Model: [DoctorSchedule] | Collection: [doctorschedules]
+Source count: 53 document(s)
+Progress: 53 / 53 (100.0%)
+Completed in 0.24s
+
+=============================================================
+Model: [EmergencyRequest] | Collection: [emergencyrequests]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [ExercisePlan] | Collection: [exerciseplans]
+Source count: 2 document(s)
+Progress: 2 / 2 (100.0%)
+Completed in 7.32s
+
+=============================================================
+Model: [Hospital] | Collection: [hospitals]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [LabBooking] | Collection: [labbookings]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [LabReport] | Collection: [labreports]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [LabTest] | Collection: [labtests]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [MedicineOrder] | Collection: [medicineorders]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [MotherCareProgress] | Collection: [mothercareprogresses]
+Source count: 24 document(s)
+Progress: 24 / 24 (100.0%)
+Completed in 0.22s
+
+=============================================================
+Model: [MotherCareSubscription] | Collection: [mothercaresubscriptions]
+Source count: 10 document(s)
+Progress: 10 / 10 (100.0%)
+Completed in 0.21s
+
+=============================================================
+Model: [Notification] | Collection: [notifications]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [OTP] | Collection: [otps]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [PathologyLab] | Collection: [pathologylabs]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Payment] | Collection: [payments]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Pharmacy] | Collection: [pharmacies]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Prescription] | Collection: [prescriptions]
+Source count: 10 document(s)
+Progress: 10 / 10 (100.0%)
+Completed in 0.17s
+
+=============================================================
+Model: [Review] | Collection: [reviews]
+Source count: 0 document(s)
+Status: Empty collection. Skipping.
+
+=============================================================
+Model: [Role] | Collection: [roles]
+Source count: 5 document(s)
+Progress: 5 / 5 (100.0%)
+Completed in 0.16s
+
+=============================================================
+Model: [SubscriptionPlan] | Collection: [subscriptionplans]
+Source count: 3 document(s)
+Progress: 3 / 3 (100.0%)
+Completed in 0.17s
+
+=============================================================
+Model: [Testimonial] | Collection: [testimonials]
+Source count: 1 document(s)
+Progress: 1 / 1 (100.0%)
+Completed in 0.18s
+
+=============================================================
+Model: [User] | Collection: [users]
+Source count: 40 document(s)
+Progress: 40 / 40 (100.0%)
+Completed in 0.35s
+
+=============================================================
+Model: [ZoomMeeting] | Collection: [zoommeetings]
+Source count: 14 document(s)
+Progress: 14 / 14 (100.0%)
+Completed in 0.23s
+
+
+═════════════════════════════════════════════════════════════════════
+                      TRANSFER SUMMARY
+═════════════════════════════════════════════════════════════════════
+Model                    Collection                Transferred     Time  Status
+─────────────────────────────────────────────────────────────────────
+Address                  addresses                     22 / 22    0.33s  ✓ DONE
+Admin                    admins                          1 / 1    0.18s  ✓ DONE
+Appointment              appointments                  57 / 57    0.32s  ✓ DONE
+AppointmentSlot          appointmentslots              58 / 58    0.99s  ✓ DONE
+Article                  articles                        3 / 3   10.56s  ✓ DONE
+AuditLog                 auditlogs                       0 / 0     0.0s  EMPTY
+ChildCareProgress        childcareprogresses             1 / 1    0.15s  ✓ DONE
+ChildCareSubscription    childcaresubscriptions          6 / 6    0.16s  ✓ DONE
+DietPlan                 dietplans                       2 / 2    8.51s  ✓ DONE
+DoctorProfile            doctorprofiles                12 / 12    0.20s  ✓ DONE
+DoctorSchedule           doctorschedules               53 / 53    0.24s  ✓ DONE
+EmergencyRequest         emergencyrequests               0 / 0     0.0s  EMPTY
+ExercisePlan             exerciseplans                   2 / 2    7.32s  ✓ DONE
+Hospital                 hospitals                       0 / 0     0.0s  EMPTY
+LabBooking               labbookings                     0 / 0     0.0s  EMPTY
+LabReport                labreports                      0 / 0     0.0s  EMPTY
+LabTest                  labtests                        0 / 0     0.0s  EMPTY
+MedicineOrder            medicineorders                  0 / 0     0.0s  EMPTY
+MotherCareProgress       mothercareprogresses          24 / 24    0.22s  ✓ DONE
+MotherCareSubscription   mothercaresubscriptions       10 / 10    0.21s  ✓ DONE
+Notification             notifications                   0 / 0     0.0s  EMPTY
+OTP                      otps                            0 / 0     0.0s  EMPTY
+PathologyLab             pathologylabs                   0 / 0     0.0s  EMPTY
+Payment                  payments                        0 / 0     0.0s  EMPTY
+Pharmacy                 pharmacies                      0 / 0     0.0s  EMPTY
+Prescription             prescriptions                 10 / 10    0.17s  ✓ DONE
+Review                   reviews                         0 / 0     0.0s  EMPTY
+Role                     roles                           5 / 5    0.16s  ✓ DONE
+SubscriptionPlan         subscriptionplans               3 / 3    0.17s  ✓ DONE
+Testimonial              testimonials                    1 / 1    0.18s  ✓ DONE
+User                     users                         40 / 40    0.35s  ✓ DONE
+ZoomMeeting              zoommeetings                  14 / 14    0.23s  ✓ DONE
+─────────────────────────────────────────────────────────────────────
+Total Transferred: 324 documents in 31.34s
+═════════════════════════════════════════════════════════════════════
